@@ -1,0 +1,80 @@
+# 🍽️ Christoffels Dine In  
+*A React Native Restaurant Management App built with Expo and TypeScript.*
+
+---
+
+## 📖 Overview
+Christoffels Dine In is a mobile restaurant management application designed to help users manage menu items, view dish statistics, and access restaurant information in a clean and modern interface.  
+The app was developed using **React Native**, **TypeScript**, and **Expo**, featuring multiple interactive screens with functional state management and dynamic data updates.
+
+---
+
+## 🧩 Features
+
+### 🏠 Home Screen
+- Displays restaurant information and latest menu statistics.  
+- Shows total number of menu items and available tag options.  
+- Includes an “About Us” section describing the restaurant.  
+- Displays the latest dishes added to the menu.  
+- Shows a friendly empty message when no dishes are available.
+
+### 🍽️ Menu Screen
+- Allows users to **add new dishes** with:
+  - Name  
+  - Description  
+  - Course (Starter, Main, Dessert, Drink)  
+  - Tags (Beef, Chicken, Veggie, Cheese — up to 4 allowed)  
+  - Price (in Rands)
+- Validates inputs before submission.  
+- Saves new dishes dynamically to the app state.  
+- Displays a scrollable list of all dishes.  
+- Includes a **Delete button** with confirmation alert for removing dishes.  
+- Built with ScrollView and KeyboardAvoidingView for mobile responsiveness.
+
+### ⚙️ Settings Screen (Redesigned)
+Originally used to filter menu items by course — now redesigned to look and feel like a real settings page.  
+New features and changes include:
+- **Search bar** for quick lookups.  
+- **Toggle switches** for:
+  - Notifications  
+  - Dark mode  
+- **Account management options:**
+  - Edit Profile  
+  - Change Password  
+  - Log Out button  
+- Styled using clean white cards and simple icons to match a native app look.
+
+### 📞 Contact Screen (Improved)
+Updated to look like a proper “Contact Us” page with:
+- Contact methods:
+  - 📧 Email address  
+  - 📞 Phone number  
+  - 💬 Live chat option  
+- “Send Message” button for future integration.  
+- In code, the page calculates the **average price per dish tag**, showing results like the average cost of Beef, Chicken, Veggie, or Cheese dishes.
+
+### 🧭 Navigation Bar
+- Persistent navigation bar at the bottom with 4 icons:  
+  `Home`, `Menu`, `Settings`, `Contact`.  
+- Uses **Ionicons** for consistent, modern icons.  
+- The active page is tracked using a state variable in `App.tsx`.
+
+### 🧠 State Management
+- All data (menu items, filters, preferences) is stored using React `useState` and `useMemo`.  
+- Centralized in `App.tsx`, with props passed down to each screen.  
+- Prevents unnecessary re-renders for performance.
+
+---
+
+## 🛠️ Technologies Used
+- **React Native** (Expo)
+- **TypeScript**
+- **React Hooks (useState, useMemo)**
+- **Ionicons** for icons
+- **Styled Components / StyleSheet** for layout
+- **Expo CLI** for local development
+
+---
+
+## 🧾 Folder Structure
+
